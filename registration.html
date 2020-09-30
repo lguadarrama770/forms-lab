@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h3>Registration</h3>
+    <h2>Registration</h2>
 
         <form action="confirmation.html" method="POST">
         <fieldset>
@@ -49,21 +49,38 @@
 
         <fieldset>
             <label><b>Select Services:</b></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-            <input type="" id="" value="" name=""><label for=""></label><br>
-
-            <label for="weeks">Date of service requested:</label>
-            <input type="week" id="weeks" value="weeks" name="user_week">
+            <input type="checkbox" id="womens" value="haircut" name="womens_haircut"><label for="womens">WOMEN'S HAIRCUT</label><br>
+            <input type="checkbox" id="mens" value="haircut" name="mens__haircut"><label for="mens">MEN'S HAIRCUT</label><br>
+            <input type="checkbox" id="bang" value="trim" name="bang_trim"><label for="bang">BANG TRIM</label><br>
+            <input type="checkbox" id="neck" value="trim" name="neck_trim"><label for="neck">NECK TRIM</label><br>
+            <input type="checkbox" id="partial" value="highlight" name="partial_highlight"><label for="partial">PARTIAL HIGHLIGHT</label><br>
+            <input type="checkbox" id="full" value="highlight" name="full_highlight"><label for="full">FULL HIGHLIGHT</label><br>
+            <input type="checkbox" id="retouch" value="retouch" name="color_retouch"><label for="retouch">COLOR RETOUCH</label><br>
+            <input type="checkbox" id="toner" value="toner" name="user_toner"><label for="toner">TONER</label><br>
         </fieldset>
+
+        <fieldset>
+            <label for="date">Date for Service</label>
+            <input type="datetime-local" id="date" name="user_date">
+        </fieldset>
+
+        <fieldset>
+            <label for="time">Time of Day for service requested:</label>
+            <select id="time" name="user_time">
+                <option value="time_morning">Morning</option>
+                <option value="time_afternoon">Afternoon</option>
+                <option value="time_evening">Early Evening</option>
+            </select>
+        </fieldset>
+
+        <form action="confirmation.html" method="post">
+            <button type="submit">Submit</button>
+        </form>
         </form>
 
 
     <footer>
-        <p><small>&copy;2020</small></p>
+        <p><small>&copy;A New Me 2020</small></p>
     </footer> 
 </body>
 </html>
