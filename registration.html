@@ -6,6 +6,8 @@
 </head>
 <body>
 
+    <h3>Registration</h3>
+
         <form action="confirmation.html" method="POST">
         <fieldset>
             <label for="firstname">First Name:</label>
@@ -20,23 +22,42 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="user_password"><br>
 
-            <label for="password">Confirm Password:</label>
+            <label for="confirmpassword">Confirm Password:</label>
             <input type="password" id="confirmpassword" name="user_password"><br>
 
-            <label for="password">Street Address One:</label>
+            <label for="streetone">Street Address One:</label>
             <input type="text" id="streetone" name="user_streetone"><br>
 
-            <label for="password">Street Address Two:</label>
+            <label for="streettwo">Street Address Two:</label>
             <input type="text" id="streettwo" name="user_streettwo"><br>
 
-            <label for="password">City:</label>
+            <label for="city">City:</label>
             <input type="text" id="city" name="user_city"><br>
 
-            <label for="password">State:</label>
+            <label for="state">State:</label>
             <input type="text" id="state" name="user_state"><br>
 
-            <label for="password">Zip Code:</label>
+            <label for="zipcode">Zip Code:</label>
             <input type="text" id="zipcode" name="user_zipcode">
+        </fieldset>
+
+        <fieldset>
+            <label><b>Preferred Language</b></label><br>
+            <input type="radio" id="spanish" value="spanish" name="user_language"><label for="spanish">Spanish</label><br>
+            <input type="radio" id="english" value="english" name="user_language"><label for="english">English</label><br>
+        </fieldset>
+
+        <fieldset>
+            <label><b>Select Services:</b></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+            <input type="" id="" value="" name=""><label for=""></label><br>
+
+            <label for="weeks">Date of service requested:</label>
+            <input type="week" id="weeks" value="weeks" name="user_week">
         </fieldset>
         </form>
 
